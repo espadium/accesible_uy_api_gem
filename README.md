@@ -22,6 +22,13 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## Test
+
+Run testis with
+```
+rspec spec/
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/accesible_uy_api_gem/fork )
