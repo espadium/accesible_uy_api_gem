@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Places
+
+Get places near lattitude and longitude
+
+`AccesibleUyApiGem.client.near(lat,long)`
 
 ## Test
 
