@@ -8,4 +8,8 @@ module AccesibleUyApiGem
   def self.client
     @client ||= AccesibleUyApiGem::Client.new()
   end
+
+  def self.api_path
+    self.base_url + self.version
+  end
 end

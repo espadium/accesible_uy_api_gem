@@ -19,5 +19,10 @@ describe 'configuration' do
       expect(AccesibleUyApiGem.secret_key).to match('MY_SECRET_KEY')
       expect(AccesibleUyApiGem.public_key).to match('MY_PUBLIC_KEY')
     end
+
+    it 'should set default url and version' do
+      expect(AccesibleUyApiGem.version).to match('v1')
+      expect(AccesibleUyApiGem.base_url).to match('')
+    end
   end
 end
