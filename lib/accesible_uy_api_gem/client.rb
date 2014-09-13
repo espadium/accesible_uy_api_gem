@@ -12,14 +12,12 @@ module AccesibleUyApiGem
     def get url
       uri = URI(AccesibleUyApiGem.api_path + url)
       res = Net::HTTP.get_response(uri)
-      
+
       if res.code == '404'
         return {}
       end
 
       JSON.parse res.body
     end
-
-
   end
 end
