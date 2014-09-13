@@ -19,5 +19,16 @@ module AccesibleUyApiGem
 
       JSON.parse res.body
     end
+
+    def post(url, params)
+      uri = URI(AccesibleUyApiGem.api_path + url)
+      res = Net::HTTP.post_form(uri, params)
+
+      if res.code == '404'
+        return {}
+      end
+
+      JSON.parse res.body
+    end
   end
 end
