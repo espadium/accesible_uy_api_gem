@@ -10,6 +10,6 @@ module AccesibleUyApiGem
   end
 
   def self.api_path
-    self.base_url + self.version
+    self.base_url + self.version + '/'
   end
 end
